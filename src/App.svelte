@@ -1,6 +1,9 @@
 <script>
+	import Header from "./components/Header.svelte"
+	import Footer from "./components/Footer.svelte"
 </script>
 
+<Header />
 <main>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in
@@ -9,6 +12,7 @@
 		blanditiis voluptatibus.!
 	</p>
 </main>
+<Footer />
 
 <style>
 	main {
