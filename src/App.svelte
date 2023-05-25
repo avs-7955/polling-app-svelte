@@ -31,6 +31,17 @@
 		console.log(polls)
 		currentActive = "Current Polls"
 	}
+
+	const handleAddVote = (e) => {
+		let option = e.detail.option
+		let id = e.detail.id
+		let copiedPolls = [...polls]
+		let upvotedPoll = copiedPolls.find((poll) => poll.id === id)
+		if (option == "a") upvotedPoll.votesA += 1
+		if (option == "b") upvotedPoll.votesB += 1
+
+		polls = copiedPolls
+	}
 </script>
 
 <Header />
@@ -38,7 +49,7 @@
 	<Tabs {items} {currentActive} on:tabChange={handleTabChange} />
 	{#if currentActive === "Current Polls"}
 		<!-- <p>Current polls component comes here.</p> -->
-		<PollList {polls} />
+		<PollList {polls} on:incVote={handleAddVote} />
 	{:else if currentActive === "Add New Poll"}
 		<!-- <p>Add new poll component comes here.</p> -->
 		<CreatePollForm on:addPoll={handleAddPoll} />
