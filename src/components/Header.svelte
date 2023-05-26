@@ -1,6 +1,6 @@
 <header>
 	<h1>
-		<img src="/img/poll_ninja_logo.svg" alt="Poll Ninja" />
+		<img src="./img/poll_ninja_logo.svg" alt="Poll Ninja" />
 	</h1>
 </header>
 
