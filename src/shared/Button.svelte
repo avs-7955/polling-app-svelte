@@ -22,11 +22,24 @@
 		color: white;
 	}
 	.secondary {
-		background-color: #45c496;
+		/* background-color: #45c496; */
+		background-color: #ffd782;
 		color: white;
 	}
 	.flat {
 		box-shadow: none;
+	}
+	.primary:hover {
+		color: #d91b42;
+		background-color: white;
+		border: 2px solid #d91b42;
+	}
+	.secondary:hover {
+		/* color: #45c496; */
+		color: #ffd782;
+		background-color: white;
+		/* border: 2px solid #45c496; */
+		border: 2px solid #ffd782;
 	}
 	.primary.inverse {
 		color: #d91b42;
@@ -34,8 +47,9 @@
 		border: 2px solid #d91b42;
 	}
 	.secondary.inverse {
-		color: #45c496;
+		/* color: #45c496; */
+		color: #ffd782;
 		background-color: white;
-		border: 2px solid #45c496;
+		border: 2px solid #ffd782;
 	}
 </style>

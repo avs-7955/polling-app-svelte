@@ -102,8 +102,10 @@
 		border-left: 4px solid #d91b42;
 	}
 	.percent-b {
-		background-color: rgba(69, 196, 150, 0.2);
-		border-left: 4px solid #45c496;
+		/* background-color: rgba(69, 196, 150, 0.2); */
+		background-color: rgba(255, 215, 130, 0.5);
+		/* border-left: 4px solid #45c496; */
+		border-left: 4px solid #ffd782;
 	}
 	/* delete button */
 	.delete {
