@@ -46,11 +46,13 @@
 		<p>
 			Total votes: {totalVotes}
 		</p>
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div class="answer" on:click={() => handleVote("a", poll.id)}>
 			<div class="percent percent-a" style="width: {$tweenA}%">
 				<span>{poll.answerA}({poll.votesA})</span>
 			</div>
 		</div>
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div class="answer" on:click={() => handleVote("b", poll.id)}>
 			<div class="percent percent-b" style="width: {$tweenB}%">
 				<span>{poll.answerB}({poll.votesB})</span>
