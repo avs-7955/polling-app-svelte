@@ -34,7 +34,7 @@ Creating new polls tab.
 Clone the project
 
 ```bash
-  git https://github.com/avs-7955/polling-app-svelte.git
+  git clone https://github.com/avs-7955/polling-app-svelte.git
 ```
 
 Go to the project directory
